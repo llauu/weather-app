@@ -65,32 +65,6 @@ const listPlaces = async (places) => {
     return id;
 };
 
-// const listTasksToComplete = async (tasks) => {
-//     console.log();
-
-//     const choices = tasks.map((task, i) => {
-//         const id = `${i + 1}.`.cyan;
-
-//         return {
-//             value: task.id,
-//             name: `${id} ${task.desc}`,
-//             checked: task.completed ? true : false,
-//         };
-//     });
-
-//     const { ids } = await inquirer.prompt([
-//         {
-//             type: 'checkbox',
-//             name: 'ids',
-//             message: 'Which tasks do you want to complete?'.bold,
-//             prefix: '',
-//             choices: choices,
-//         },
-//     ]);
-
-//     return ids;
-// };
-
 const confirm = async (message) => {
     const { ok } = await inquirer.prompt([
         {
